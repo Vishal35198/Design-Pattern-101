@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Chaurasiya - Researcher Portfolio</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Darker gray text */
+        }
+        .container {
+            max-width: 960px;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.75rem; /* Increased padding */
+            margin-bottom: 2rem; /* Increased margin */
+            font-weight: 700; /* Bolder title */
+            color: #1e293b; /* Even darker title color */
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70px; /* Wider line */
+            height: 4px; /* Thicker line */
+            background-color: #4f46e5; /* Deeper indigo color */
+            border-radius: 9999px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Slightly stronger shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 1px solid #e2e8f0; /* Subtle border */
+        }
+        .card:hover {
+            transform: translateY(-7px); /* More pronounced lift */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12); /* Stronger shadow on hover */
+            background-color: #f0f4f8; /* Very subtle light blue background on hover */
+        }
+        .link-hover:hover {
+            color: #4338ca; /* Darker indigo on hover */
+        }
+        .project-link {
+            display: inline-flex; /* Use flex for icon and text alignment */
+            align-items: center;
+            padding: 0.5rem 1rem;
+            margin-right: 0.75rem;
+            margin-bottom: 0.5rem; /* For wrapping on small screens */
+            background-color: #6366f1; /* Indigo background */
+            color: #ffffff; /* White text */
+            border-radius: 0.5rem; /* Rounded buttons */
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+        .project-link:hover {
+            background-color: #4f46e5; /* Darker indigo on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+        .project-link i {
+            margin-right: 0.5rem;
+        }
+
+        /* Header gradient background */
+        .header-bg {
+            background: linear-gradient(to right, #6366f1, #8b5cf6); /* Indigo to Violet gradient */
+            color: #ffffff;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            border-bottom-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .header-bg h1 {
+            color: #ffffff; /* Ensure title is white on gradient */
+        }
+        .header-bg p {
+            color: #e0e7ff; /* Lighter text on gradient */
+        }
+        .header-bg .link-hover {
+            color: #e0e7ff; /* Lighter links on gradient */
+        }
+        .header-bg .link-hover:hover {
+            color: #c7d2fe; /* Even lighter on hover */
+        }
+
+        /* Styles for scroll animation */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-animate.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased leading-normal">
+
+    <div class="container mx-auto px-4 py-12">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12 header-bg scroll-animate rounded-lg">
+            <h1 class="text-5xl font-extrabold mb-2">Vishal Chaurasiya</h1>
+            <p class="text-xl mb-4">Researcher | AI/ML Enthusiast</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/vishal35198" target="_blank" class="link-hover flex items-center">
+                    <i class="fab fa-github text-2xl mr-2"></i>
+                    <span class="text-lg">GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/vishal351980" target="_blank" class="link-hover flex items-center">
+                    <i class="fab fa-linkedin text-2xl mr-2"></i>
+                    <span class="text-lg">LinkedIn</span>
+                </a>
+                <a href="mailto:vishaljssaten@gmail.com" class="link-hover flex items-center">
+                    <i class="fas fa-envelope text-2xl mr-2"></i>
+                    <span class="text-lg">Email</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- About/Research Interests Section -->
+        <section id="about" class="mb-12 scroll-animate">
+            <h2 class="text-3xl section-title mb-6">About Me & Research Interests</h2>
+            <div class="card p-8">
+                <p class="text-lg leading-relaxed text-gray-700 mb-4 font-bold">
+                    Passionate about advancing research in Generative AI (GANs, VAEs), Multimodal Learning
+                    (text-to-image synthesis), and Medical AI (ECG signal analysis). Aim to leverage deep learning techniques
+                    to solve real-world problems through rigorous experimentation and innovation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-12 scroll-animate">
+            <h2 class="text-3xl section-title mb-6">Skills</h2>
+            <div class="card p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Languages</h3>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>C/C++</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>JavaScript/TypeScript</li>
+                            <li>HTML/CSS</li>
+                            <li>LATEX</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Tools</h3>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Git/GitHub</li>
+                            <li>VS Code</li>
+                            <li>Pycharm</li>
+                            <li>Open CV</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Deep Learning Tools</h3>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>PyTorch</li>
+                            <li>Numpy</li>
+                            <li>TensorFlow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-12 scroll-animate">
+            <h2 class="text-3xl section-title mb-6">Education</h2>
+            <div class="card p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-medium text-gray-800">JSS Academy of Technical Education</h3>
+                    <p class="text-gray-600">B.Tech Computer Science | June 2026</p>
+                    <p class="text-gray-600">Current GPA: 8.12/10.0</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium text-gray-800">Father Agnel School</h3>
+                    <p class="text-gray-600">Intermediate | June 2022</p>
+                    <p class="text-gray-600">Percent: 91.2/100</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12 scroll-animate">
+            <h2 class="text-3xl section-title mb-6">Experience</h2>
+            <div class="card p-8">
+                <h3 class="text-xl font-medium text-gray-800">Infosys Springboard Intern</h3>
+                <p class="text-gray-600">Backend Developer | Nov. 2022 - Feb. 2025</p>
+                <ul class="list-disc list-inside text-gray-700 mt-2">
+                    <li>Developed and maintained backend services for various applications.</li>
+                    <li>Collaborated with cross-functional teams to deliver robust software solutions.</li>
+                    <li>Gained practical experience in software development lifecycle.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12 scroll-animate">
+            <h2 class="text-3xl section-title mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Story-GPT Project -->
+                <div class="card p-8">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Story-GPT</h3>
+                    <p class="text-gray-600 mb-3">PyTorch, Attention, Tiny-Stories | Apr. 2025</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Built a compact GPT-style transformer model from scratch to generate coherent preschool-level short stories, trained on the TinyStories dataset.</li>
+                        <li>Engineered core components including multi-head self-attention, causal masking, and positional encodings for autoregressive text generation.</li>
+                    </ul>
+                    <div class="flex flex-wrap mt-4">
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-database"></i> Dataset
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ECG Signal Classification Project -->
+                <div class="card p-8">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">ECG Signal Classification</h3>
+                    <p class="text-gray-600 mb-3">PyTorch, ECG Signal Processing, PhysioNet Dataset | Feb. 2025</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Built a 1D Convolutional Neural Network for classifying cardiac arrhythmias based on raw ECG signal data.</li>
+                        <li>Applied signal preprocessing techniques such as segmentation, normalization, and noise filtering on data sourced from PhysioNet.</li>
+                        <li>Processed 10,000 signals labeled by 5 Cardiologists with 12 Channels for CNN based model.</li>
+                        <li>Achieved strong multi-class classification performance; gained experience with time-series modeling and medical data handling.</li>
+                    </ul>
+                    <div class="flex flex-wrap mt-4">
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-file-alt"></i> Paper
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MuseLMLSTM-based Music Generator Project -->
+                <div class="card p-8">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">MuseLMLSTM-based Music Generator</h3>
+                    <p class="text-gray-600 mb-3">PyTorch, LSTM, Bach Cello Suite | Mar. 2025</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Developed an LSTM-driven sequence model from scratch for symbolic music generation, trained to predict the next note in a melody.</li>
+                        <li>Leveraged unsupervised learning on the Bach Cello Suite Dataset with a self-supervised loss formulation for sequence modeling.</li>
+                        <li>Designed and optimized a robust preprocessing pipeline to parse MIDI files into tokenized sequences for efficient LSTM training.</li>
+                    </ul>
+                    <div class="flex flex-wrap mt-4">
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-file-alt"></i> Paper
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Coursework & MOOCs Section -->
+        <section id="coursework" class="mb-12 scroll-animate">
+            <h2 class="text-3xl section-title mb-6">Coursework & MOOCs</h2>
+            <div class="card p-8">
+                <h3 class="text-xl font-medium text-gray-800">Introduction to Machine Learning</h3>
+                <p class="text-gray-600">IIT Kharagpur | Nov. 2022 - Feb. 2025</p>
+                <p class="text-gray-600">Silver Medalist | Certificate</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm mt-12 scroll-animate">
+            <p>&copy; 2025 Vishal Chaurasiya. All rights reserved. Last Updated on May 20th, 2025.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.scroll-animate');
+
+            const observerOptions = {
+                root: null, // Use the viewport as the root
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); // Stop observing once it's active
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
