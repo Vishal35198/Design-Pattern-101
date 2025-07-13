@@ -1,0 +1,6 @@
+2025-07-13 11:32:17,949 - ERROR - Cannot find the file specified
+Traceback (most recent call last):
+  File "E:\Pytorch_Autograd\singleton.py", line 29, in load_config
+    with open(path,'r') as f:
+         ^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
